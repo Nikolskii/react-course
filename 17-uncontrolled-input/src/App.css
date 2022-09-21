@@ -3,7 +3,7 @@
 }
 
 h1 {
-  font-size: 90px;
+  font-size: 70px;
   margin-top: 20px;
 }
 
@@ -14,4 +14,18 @@ button {
   border: 0;
   margin: 20px;
   cursor: pointer;
+}
+
+form {
+  font-size: 30px;
+}
+
+input {
+  margin: 15px;
+  padding: 10px;
+  font-size: 20px;
+}
+
+label {
+  display: block;
 }
