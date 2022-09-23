@@ -9,11 +9,17 @@ function Posts() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    fetch(API_URL)
-      .then((res) => res.json())
-      .then((posts) => setPosts(posts))
-      .catch((error) => setError(error.message))
-      .finally(() => setIsLoading(false));
+    (async function () {
+      try {
+        const res = await fetch(API_URL);
+        const posts = await res.json();
+        setPosts(posts);
+      } catch (error) {
+        setError(error.message);
+      }
+
+      setIsLoading(false);
+    })();
   }, []);
 
   if (error) {
