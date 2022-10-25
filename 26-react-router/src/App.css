@@ -2,6 +2,31 @@
   text-align: center;
 }
 
+/* Used by default with NavLink */
+/* .active {
+  color: lightyellow;
+  text-decoration: none;
+} */
+
+.activeLink {
+  color: lightyellow;
+  text-decoration: none;
+}
+
+a {
+  color: lightblue;
+  font-size: 35px;
+}
+
+nav {
+  background-color: darkslategray;
+  padding: 5px;
+}
+
+nav a {
+  margin: 15px;
+}
+
 h1 {
   font-size: 90px;
   margin-top: 20px;
