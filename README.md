@@ -2,7 +2,7 @@
 
 Репозиторий выполненных заданий образовательного курса по React от Богнада Стащука.
 
-[Ссылка на курс](https://mesto-nikolsky.nomoredomains.club/) на Udemy.com
+[Ссылка на курс](https://www.udemy.com/course/react-ru/) на Udemy.com
 
 ## Изученные концепции и функции React (18 версия)
 
