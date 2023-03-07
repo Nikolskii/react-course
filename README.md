@@ -4,6 +4,10 @@
 
 [Ссылка на курс](https://www.udemy.com/course/react-ru/) на Udemy.com
 
+## Практические работы
+
+[Todo приложение](https://todo.denisqa.ru/)
+
 ## Изученные концепции и функции React (18 версия)
 
 - Компоненты
