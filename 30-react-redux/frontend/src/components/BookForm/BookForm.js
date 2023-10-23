@@ -4,6 +4,7 @@ import createBookWithId from '../../utils/createBookWithId';
 import { addBook, fetchBook } from '../../redux/slices/booksSlice';
 import booksData from '../../data/books.json';
 import './BookForm.css';
+import { setError } from '../../redux/slices/errorSlice';
 
 const BookForm = () => {
   const dispatch = useDispatch();
@@ -22,6 +23,8 @@ const BookForm = () => {
     if (title && author) {
       dispatch(addBook(createBookWithId({ title, author }, 'manual')));
       resetForm();
+    } else {
+      dispatch(setError('You must fill title and author!'));
     }
   };
 
@@ -33,7 +36,7 @@ const BookForm = () => {
   };
 
   const handleAddRandomBookViaAPI = () => {
-    dispatch(fetchBook());
+    dispatch(fetchBook('http://localhost:4000/random-book'));
   };
 
   return (
